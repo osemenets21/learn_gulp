@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Document
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap' rel='stylesheet')
+
+    link(rel='stylesheet', href='./css/main.min.css')
+  body
+    .wrapper__all
+      block header
+        include header
+
+      main
+        section
+          h2 How Dreamshare works?
+          .news
+            .card.news__first
+              button.button.button-first(type='button') step 1
+              h3 Sed leo enim, condimentum
+              p
+                | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet
+                | facilisis.
+            .card.news__second
+              button.button.button-second(type='button') step 2
+              h3 Morbi velit risus
+              p
+                | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+            .card.news__third
+              button.button.button-third(type='button') step 3
+              h3 Sed leo enim, condimentum
+              p
+                | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet
+                | facilisis.
+        section.partners
+          h2 Meet a partner for your best holiday
+          .partners__avatar
+            .partners__img
+              img.partners__img1(src='images/Avatar_0.png' alt='Avatar')
+              h3 Bradley Hunter
+              p Based in Chicago. I love playing tennis and loud music.
+            .partners__img
+              img.partners__img2(src='images/Avatar_1.png' alt='Avatar')
+              h3 Marie Bennett
+              p Currently living in Colorado. Lover of art, languages and travelling.
+            .partners__img
+              img.partners__img3(src='images/Avatar_2.png' alt='Avatar')
+              h3 Diana Wells
+              p
+                | Living in Athens, Greece. I love black and white classics, chillout music and green tea.
+            .partners__img
+              img.partners__img4(src='images/Avatar_3.png' alt='Avatar')
+              h3 Christopher Pierce
+              p Star Wars fanatic. I have a persistent enthusiasm to create new things.
+          button(type='button') See other partners
+        section.holiday
+          h2 Discover holiday activity ideas
+          .holiday__images
+            .holiday__images_item1.item Sports and Activis
+            .holiday__images_item2.item Wellness and Health
+            .holiday__images_item3.item
+              | Extreme Sports 
+              br
+              |  and Expeditions
+            .holiday__images_item4.item Games
+            .holiday__images_item5.item Culture and Education
+            .holiday__images_item6.item Enjomet and Relaxation
+            .holiday__images_item7.item Trevelling
+        section.interests
+          h2 Crate your holiday activity
+          h4 Hi! What are your holiday interests?
+          .wrapper
+            input(type='text' placeholder='    Enter your insterests')
+            button(type='button') Search partners
+
+
+      block footer
+        include footer
+      block scripts
+        script(src='./js/main.min.js')
